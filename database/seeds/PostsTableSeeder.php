@@ -20,6 +20,7 @@ class PostsTableSeeder extends Seeder
             $newPost->user = $faker->userName();
             $newPost->userpic= $faker->imageUrl(64, 64, "animals", true);
             $newPost->content = $faker->paragraphs(3, true);
+            $newPost->save();
         }
     }
 }
