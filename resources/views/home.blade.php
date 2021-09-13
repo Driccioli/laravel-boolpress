@@ -20,4 +20,13 @@
         </div>
     </div>
 </div>
+
+    @foreach ($allPosts as $post)
+        <div class="card">
+            <h2>{{$post->title}}</h2>
+            <h6>{{$post->user}}</h6>
+            <img src="{{$post->userpic}}" alt="profile pic">
+            <p>{{$table->content}}</p>
+        </div>
+    @endforeach
 @endsection
