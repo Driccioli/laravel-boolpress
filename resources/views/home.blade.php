@@ -25,8 +25,8 @@
         <div class="card">
             <h2>{{$post->title}}</h2>
             <h6>{{$post->user}}</h6>
-            <img src="{{$post->userpic}}" alt="profile pic">
-            <p>{{$table->content}}</p>
+            {{-- <img class="pfp" src="{{$post->userpic}}" alt="profile pic"> --}}
+            <p>{{$post->content}}</p>
         </div>
     @endforeach
 @endsection

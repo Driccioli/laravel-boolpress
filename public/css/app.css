@@ -10942,3 +10942,8 @@ a.text-dark:focus {
   }
 }
 
+.pfp {
+  width: 64px;
+  height: 64px;
+}
+
