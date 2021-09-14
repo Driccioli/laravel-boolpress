@@ -3,7 +3,7 @@
 @section('content')
     
     <div class="container">
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -12,6 +12,7 @@
                     <th scope="col">User</th>
                     <th scope="col">User pfp</th>
                     <th scope="col">Content</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,7 +24,7 @@
                         <td>{{$post->user}}</td>
                         <td><img src="{{$post->userpic}}" alt="{{$post->user}} pfp"></td>
                         <td>{{$post->content}}</td>
-                        <td><a href="{{route('posts.show', $post->id)}}"><i class="bi bi-zoom-in"></i></a></td>
+                        <td><a class="icon" href="{{route('posts.show', $post->id)}}"><i class="bi bi-zoom-in"></i></a></td>
                     </tr>
                 @endforeach
             </tbody>
