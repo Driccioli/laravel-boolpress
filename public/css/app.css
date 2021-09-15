@@ -12359,3 +12359,12 @@ a.text-dark:focus {
   color: darkblue;
 }
 
+.user {
+  font-size: 18px;
+}
+
+.user img {
+  width: 48px;
+  height: 48px;
+}
+
