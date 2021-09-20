@@ -8,34 +8,63 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
+@import 'partials/single-post';
+
+.content{
+    background-color: rgb(15, 15, 29);
+    color: white;
+    min-height:91vh;
+}
+
+.button-link{
+    &:hover{
+        color:lightblue;
+        text-decoration: none;
+    }
+    color:white;
+}
+
+.table-hover{
+    &:hover{
+        transition: background-color 1s;
+        background-color:rgba(3, 12, 39, 0.5);
+    }
+}
+
 .table{
     text-align: center;
+    border: 2px solid lightblue;
     thead{
-        background-color:rgb(231, 219, 219);
+        background-color:rgb(48, 45, 75);
+        th{
+            border-bottom: 1px solid lightblue;
+        }
+        
     }
     tbody{
+
+        
+
         tr:nth-child(odd){
-            background-color: rgb(221, 247, 255);
+            background-color: rgb(52, 63, 66);
         }
         tr:nth-child(even){
-            background-color: rgb(255, 169, 169);
+            background-color: rgb(75, 37, 37);
         }
         
         th, td{
             vertical-align: middle;
+            border-top: 1px solid lightblue;
+            border-bottom: 1px solid lightblue;
         }
     }
-        .icon{
-            font-size:30px;
-            font-weight:bold;
-            color:darkblue;
-        }
 }
 
-.user{
-    img{
-        width: 48px;
-        height: 48px;
-    }
-    font-size: 18px;
+.action-button{
+    font-size:24px;
+}
+
+.modal-dark{
+    background-color: rgb(15, 15, 29);
+    border: 1px solid lightblue;
 }

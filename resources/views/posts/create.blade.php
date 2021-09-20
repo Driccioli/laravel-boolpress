@@ -2,24 +2,36 @@
 @extends('layouts.error')
 
 @section('content')
-    <form action="{{route('posts.store')}}" method="post">
+    <form class="p-5 single-post" action="{{route('posts.store')}}" method="post">
 
         @csrf
+        <button type="button" class="btn btn-primary action-button">
+            <a class="button-link back" href="{{route('posts.store')}}"><-Back</a>
+        </button>
 
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title">
+        <div class="form-group mt-2">
+            <label for="title">Title</label>
+            <input class="form-control" type="text" name="title" id="title">
+        </div>
 
-        <label for="user">User</label>
-        <input type="text" name="user" id="user">
+        <div class="form-group">
+            <label for="user">User</label>
+            <input class="form-control" type="text" name="user" id="user">
+        </div>
 
-        <label for="user">User Profile pic</label>
-        <input type="text" name="userpic" id="userpic">
-
-        <label for="content">Content</label>
-        <textarea name="content" id="content" rows="4" cols="50">
+        <div class="form-group">
+            <label for="user">User Profile pic (must be an URL)</label>
+            <input class="form-control" type="text" name="userpic" id="userpic">
+        </div>
+        
+        <div class="form-group">
+            <label for="content">Post Content</label>
+            <textarea class="form-control" name="content" id="content" rows="4">
             
-        </textarea>
+            </textarea>
+        </div>
 
-        <input type="submit" value="Submit">
+        <button type="submit" class="btn btn-primary">Submit</button>
+
     </form>    
 @endsection
