@@ -102,7 +102,7 @@ class PostController extends Controller
         return redirect()->route('posts.index');
     }
 
-    private function fillAndSavePost($post, $data){
+    private function fillAndSavePost(Post $post, $data){
         
         
         
