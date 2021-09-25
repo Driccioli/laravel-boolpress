@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    //Add $fillable variable if needed
+    public function posts(){
+        return $this->hasMany(Post::class);
+    }
 }

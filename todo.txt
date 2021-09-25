@@ -1,0 +1,5 @@
+1) Creazione della tabella categories (migrazione della stessa nuova tabella, aggiornamento di posts 
+e poi modifica seeder in PostSeeder) [DONE]
+2) Aggiornamento della create e store per la gestione (e salvataggio) del category_id [DONE]
+3) Aggiornare la show mostrando la categoria del post (cronaca, sport, opinione, turismo, musica, cinema…) [DONE]
+4) Come bonus provate a gestire anche l’edit e update 

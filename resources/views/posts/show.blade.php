@@ -16,6 +16,8 @@
             <h6>Date updated: {{$post->updated_at}}</h6>
         @endif
         
+        <span class="badge rounded-pill bg-primary p-2">{{$post->category->category}}</span>
+
         <p>{{$post->content}}</p>
         <button type="button" class="btn btn-primary action-button">
             <a class="button-link" href="{{route('posts.edit', $post)}}"><i class="bi bi-pencil-square"></i></a>

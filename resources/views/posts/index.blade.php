@@ -29,7 +29,7 @@
                         <td>{{$post->title}}</td>
                         <td>{{$post->user}}</td>
                         <td><img src="{{$post->userpic}}" alt="{{$post->user}} pfp"></td>
-                        <td>{{$post->category_id}}</td>
+                        <td>{{$post->category->category}}</td>
                         <td>{{$post->content}}</td>
                         <td>
                             <button type="button" class="btn btn-primary action-button mb-2">
